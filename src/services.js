@@ -1,3 +1,5 @@
-export function fetchWithTimeout(delay) {
+function fetchWithTimeout(delay) {
     return new Promise(resolve => setTimeout(resolve, delay));
 }
+
+export { fetchWithTimeout }
