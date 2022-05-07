@@ -1,5 +1,4 @@
-import { fetchMovies, fetchBooks } from "./services.js";
-let movies = require("./data/movies.json");
+import { fetchWithTimeout, fetchMovies, fetchBooks } from "./services.js";
 
 function getBooksAndMovies() {
     return Promise.all([fetchBooks(), fetchMovies()])
